@@ -19,19 +19,19 @@ Pela interface do GitHub:
 ### 2. Montar a URL
 
 ```
-https://cdn.jsdelivr.net/gh/__USUARIO__/image-cdn@main/images/NOME-DO-ARQUIVO
+https://cdn.jsdelivr.net/gh/pedroneto-crypto/image-cdn@main/images/NOME-DO-ARQUIVO
 ```
 
 Exemplo, para um arquivo `logo.png`:
 
 ```
-https://cdn.jsdelivr.net/gh/__USUARIO__/image-cdn@main/images/logo.png
+https://cdn.jsdelivr.net/gh/pedroneto-crypto/image-cdn@main/images/logo.png
 ```
 
 ### 3. Usar no HTML
 
 ```html
-<img src="https://cdn.jsdelivr.net/gh/__USUARIO__/image-cdn@main/images/logo.png"
+<img src="https://cdn.jsdelivr.net/gh/pedroneto-crypto/image-cdn@main/images/logo.png"
      alt="Logo" width="200">
 ```
 
@@ -39,7 +39,7 @@ Em CSS:
 
 ```css
 .banner {
-  background-image: url("https://cdn.jsdelivr.net/gh/__USUARIO__/image-cdn@main/images/banner.png");
+  background-image: url("https://cdn.jsdelivr.net/gh/pedroneto-crypto/image-cdn@main/images/banner.png");
 }
 ```
 
@@ -57,5 +57,5 @@ Em CSS:
 Caso precise, também funciona (mas tem rate limit e é menos indicada para produção):
 
 ```
-https://raw.githubusercontent.com/__USUARIO__/image-cdn/main/images/NOME-DO-ARQUIVO
+https://raw.githubusercontent.com/pedroneto-crypto/image-cdn/main/images/NOME-DO-ARQUIVO
 ```
