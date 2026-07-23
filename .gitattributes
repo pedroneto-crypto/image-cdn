@@ -1,0 +1,9 @@
+# Trata imagens como binário (evita conversão de fim de linha que corrompe arquivos)
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.webp  binary
+*.svg   text
+*.ico   binary
+*.avif  binary
