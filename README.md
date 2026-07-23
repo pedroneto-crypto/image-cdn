@@ -15,6 +15,7 @@ Pela interface do GitHub:
 3. Arraste a imagem e clique em **Commit changes**
 
 > Dica: use nomes sem espaços e sem acentos (ex.: `logo-header.png`, não `logo header.png`).
+> **Importante:** faça upload sempre dentro da pasta `images/`, não na raiz do repositório — senão a URL não encontra o arquivo.
 
 ### 2. Montar a URL
 
@@ -48,7 +49,10 @@ Em CSS:
 ## Observações
 
 - **O repositório é público.** Qualquer pessoa com o link vê a imagem — não coloque nada confidencial aqui.
-- **Cache da CDN:** a jsDelivr pode levar alguns minutos para atualizar depois do upload. Se precisar da versão nova na hora, troque `@main` por um commit específico, ou aguarde o cache expirar.
+- **Cache da CDN:** a jsDelivr pode levar alguns minutos para "descobrir" um arquivo novo. Se a URL der erro `Couldn't find the requested file` logo após o upload, abra esta URL no navegador para forçar a atualização (troque o nome do arquivo no final):
+  ```
+  https://purge.jsdelivr.net/gh/pedroneto-crypto/image-cdn@main/images/NOME-DO-ARQUIVO
+  ```
 - **Versão fixa (opcional):** trocar `@main` pelo hash de um commit (`@a1b2c3d`) trava a imagem naquela versão e melhora o cache.
 - Formatos suportados: `.png`, `.jpg`, `.jpeg`, `.gif`, `.webp`, `.svg`, `.avif`, `.ico`.
 
